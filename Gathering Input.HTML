@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gathering Input</title>
+    <script>
+    function getName() {var fullName;
+    fullName = document.getElementById("first").value
+    +" " + document.getElementById("last").value;
+    document.getElementById("message").innerHTML="You are " + fullName + (".");}
+    </script>
+  </head>
+  <body>
+    <form action="demo_form.asp">
+      What is your first name? <input type="text" id="first"><br>
+      What is your last name? <input type="text" id="last"><br>
+      <button type="button" id="doneButton" onclick="getName();"> Done </button>
+      <p id="message"> </p>
+    </form>
+  </body>
+</html>
